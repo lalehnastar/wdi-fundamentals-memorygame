@@ -1,0 +1,40 @@
+body {
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  font-size: 18px;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* =============================
+TYPOGRAPHY
+================================ */
+h1, h2 {
+  text-transform: uppercase;
+}
+
+h1 {
+  color: #0D2C40;
+  font-size: 45px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+h2 {
+  color: #0D2C40;
+  letter-spacing: 1px;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+p {
+  font-family: "Droid Serif", serif;
+  line-height: 26px;
+}
+
+a {
+  color: #F15B31;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
