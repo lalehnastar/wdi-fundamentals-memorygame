@@ -53,7 +53,8 @@ var checkForMatch = function () {
 
   }
 };
-var flipCard = function(cardId){
+var flipCard = function(){
+	 cardId = this.getAttribute('data-id');
 console.log("User flipped " + cards[cardId].rank);
 
 // Create a variable cardTwo to represent the second card the user flipped
@@ -70,6 +71,7 @@ console.log(cards[cardId].cardImage)
   console.log(cards[cardId].suit)
 
 // Check to see if two cards have been played
+this.setAttribute('src', cards[cardId].cardImage);
 if (cardsInPlay.length === 2) {
 
   // Check to see if two cards match and provide feedback to user
@@ -81,8 +83,18 @@ if (cardsInPlay.length === 2) {
 
 
 
+var createBoard = function(){
+	for (var i = 0; i < cards.length; i++) {
+ var cardElement = document.createElement('img');
+cardElement.setAttribute('src', 'images/back.png');
+cardElement.setAttribute('data-id', i);
+
+cardElement.addEventListener('click',flipCard);
+ document.getElementById('game-board').appendChild(cardElement);
+}
+}
 
 
+createBoard();
 
-flipCard(0);
-flipCard(2);
+
