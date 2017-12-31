@@ -9,6 +9,16 @@ body {
   margin: 0;
 }
 
+
+.clearfix:after {
+visibility: hidden;
+display: block;
+content: " ";
+clear: both;
+height: 0;
+font-size: 0;
+}
+
 /* =============================
 TYPOGRAPHY
 ================================ */
@@ -44,6 +54,13 @@ a {
   letter-spacing: .06em;
 
   margin: 0 20px;
+
+
+  border-bottom: 2px solid transparent;
+}
+
+a:hover {
+  border-bottom: 2px solid white;
 }
 
 
@@ -78,4 +95,34 @@ GAME BOARD
 ================================ */
 img {
   margin: 40px 8px 0;
+}
+
+
+footer {
+  text-transform: uppercase;
+  padding: 0 20px;
+  background-color: #0D2C40;
+  color: white;
+  font-size: 14px;
+  letter-spacing: .08em;
+  font-weight: 500;
+
+}
+
+
+
+
+.copyright {
+  float: left;
+  font-family: "Raleway", sans-serif;
+}
+
+.message {
+  float: right;
+  font-family: "Raleway", sans-serif;
+}
+
+.name {
+  color: #F15B31;
+  font-weight: bold;
 }
